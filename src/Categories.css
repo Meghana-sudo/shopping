@@ -1,0 +1,49 @@
+.categories{
+    background-color: plum;
+    color:white;
+    padding:20px;
+    display:flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+  height: 86vh;}
+
+.categories>span{
+    padding-bottom: 20px;
+}
+
+.title{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.summary{
+    width:30%;
+}
+
+.active {
+    background-color:aliceblue;
+    color:black;
+    cursor: pointer;
+  }
+  
+  /* Links on mouse-over */
+  .category:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+  }
+
+  @media (max-width: 771px) {
+
+  .categories {
+    width: 40%;
+    padding:10px;
+    margin: 5px;
+  }
+
+  .categories > span {
+    font-size: 10px;
+  }
+
+}
