@@ -6,10 +6,13 @@
     flex-direction: column;
     width: 20%;
     margin: 10px;
-  height: 86vh;}
+  height: 86vh;
+  
+}
 
-.categories>span{
-    padding-bottom: 20px;
+.categories>link{
+    padding-bottom: 40px;
+    text-decoration: none;
 }
 
 .title{
@@ -21,18 +24,27 @@
     width:30%;
 }
 
-.active {
-    background-color:aliceblue;
-    color:black;
-    cursor: pointer;
-  }
-  
+.nav-link{
+  color: black;
+}
+
   /* Links on mouse-over */
-  .category:hover:not(.active) {
-    background-color: #555;
-    color: white;
+  .nav-link:hover:not(.active) {
+    background-color:whitesmoke;
+    color: black;
     cursor: pointer;
+    
+    
   }
+
+
+.nav-item{
+ padding: 14px
+  ;
+  
+  };
+
+  
 
   @media (max-width: 771px) {
 

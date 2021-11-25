@@ -12,13 +12,19 @@ import Cart from './Cart';
 import Navbar from './Navbar';
 
 
+
+
 function App() {
   return (
     <BrowserRouter>
     <Navbar/>
     <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/cart" element={<Cart />} />
+    <Route exact path="/" element={<Home category="Beauty" />} />
+    <Route exact path="/cart" element={<Cart  />} />
+    <Route exact path="/Electronics" element={<Home category="Electronics" />}/>
+    <Route exact path="/cloth" element={<Home category="Clothing" />}/>
+    <Route exact path="/kids" element={<Home category="Kids" />}/>
+    
       </Routes>
     
  

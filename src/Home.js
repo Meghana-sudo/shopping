@@ -1,12 +1,12 @@
 import React from 'react'
 import './Home.css'
 import Navbar from './Navbar'
-import Slider from './Slider'
 import {CartState} from './context/Context'
 import Singleproduct from './Singleproduct'
 import Categories from './Categories'
+import App from './App'
 
-function Home() {
+function Home(props) {
     // const {
     //     state:{products},
     //     }
@@ -25,11 +25,14 @@ function Home() {
 <div className="home">
 
  
- <Categories/>
+ 
 <div className="productContainer">
-    {products.map((prod)=>{
+<Categories/>
+     <div className="productContainer">
+    {products.filter(products=>products.category=props.category).map((prod)=>{
       return <Singleproduct prod={prod} key={prod.id}/>
     })}
+</div> 
 </div> 
 
         </div>
