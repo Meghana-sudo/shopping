@@ -13,16 +13,24 @@ const Context = ({children}) => {
         inStock: faker.random.arrayElement([1, 3, 5, 6, 7]),
         price:faker.commerce.price(),
         image:faker.random.image(),
+        category:faker.commerce.department(),
+        qty: 1,
+        
         
 
     }));
 
+
+    
   const [state, dispatch] = useReducer(cartReducer, {
     products:products,
     cart:[]
   });
 
 
+  
+  
+  
     return <Cart.Provider value={{state,dispatch}}>{children}</Cart.Provider>;
 };
 
